@@ -28,7 +28,18 @@ The goal: show how I design, analyze, and explain experiments to drive **smarter
 
 ---
 
-## Results
-- Two designs (A & B) showed small gains but not significant after correction  
-- **Design C clearly outperformed Control** with a ~38% lift in conversion  
-- Result was **statistically significant** (p < 0.00001, Bonferroni-adjusted
+Results
+
+Here’s the core result (conversion rates with 95% CIs):
+
+Executive Summary
+
+Winner: Design C
+
+Conversion: 10.82% (Control: 7.86%)
+
+Relative Lift: ~38%
+
+Bonferroni-adjusted p-value: 2.2e-06
+
+Recommendation: Ship Design C, monitor guardrails (latency, crash rate, uninstall rate), and run a post-rollout holdback to validate long-term impact.
