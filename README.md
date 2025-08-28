@@ -28,18 +28,20 @@ The goal: show how I design, analyze, and explain experiments to drive **smarter
 
 ---
 
-Results
+## Results  
 
-Here’s the core result (conversion rates with 95% CIs):
+Here’s the core result (conversion rates with 95% CIs):  
 
-Executive Summary
+![Conversion Rate Plot](ab_plot.png)  
 
-Winner: Design C
+### Executive Summary  
 
-Conversion: 10.82% (Control: 7.86%)
+> **Winner:** Design C  
+> - Conversion: 10.82% (Control: 7.86%)  
+> - Relative Lift: ~38%  
+> - Bonferroni-adjusted p-value: 2.2e-06  
+>  
+> **Recommendation:** Ship Design C, monitor guardrails (latency, crash rate, uninstall rate), and run a post-rollout holdback to validate long-term impact.  
 
-Relative Lift: ~38%
-
-Bonferroni-adjusted p-value: 2.2e-06
 
 Recommendation: Ship Design C, monitor guardrails (latency, crash rate, uninstall rate), and run a post-rollout holdback to validate long-term impact.
